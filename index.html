@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="imagem/png" href="images/hanoi.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Torre de Hanoi</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <div class="contadorMovimentos">
+        <span class="contador"> Movimentos: </span>
+        <span class="movimentos"> 0 </span>
+      </div>
+      <button id="botaoReset">Reset</button>
+    </nav>
+    <main class="conteudo">
+      <section class="mensagem">
+        <span class="mensagemSpan">  </span>
+      </section>
+      <section class="torres">
+        <section class="torre" id="torre1">
+          <div class="coluna" id="coluna1">
+            <div id="disco1"></div>
+            <div id="disco2"></div>
+            <div id="disco3"></div>
+            <div id="disco4"></div>
+          </div>
+          <h1> Start </h1>
+        </section>
+        <section class="torre" id="torre2">
+          <div class="coluna" id="coluna2"></div>          
+          <h1> Offset </h1>
+        </section>
+        <section class="torre" id="torre3">
+          <div class="coluna" id="coluna3"></div>
+          <h1> End </h1>
+        </section>
+      </section>
+    </main>
+    <footer class="rodape">
+      <h1>Regras da Torre de Hanoi</h1>
+      <div class="regras">
+        <p>
+            Apenas um disco pode ser movido por vez.
+        </p>
+        <p>
+            Cada movimento consiste de pegar o disco de cima de uma das pilhas e
+            movê-lo para o topo de outra pilha.
+        </p>
+        <p>
+            Nenhum disco pode ser colocado no topo de um disco menor.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
